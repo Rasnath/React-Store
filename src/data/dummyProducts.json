@@ -1,0 +1,85 @@
+[
+  {
+    "id": "1",
+    "category": "tv",
+    "brand": "LG",
+    "name": "LG 45 Polegadas",
+    "price": 55,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pellentesque urna euismod enim auctor, euismod mollis tellus porttitor. Fusce quis.",
+    "qt": "5",
+    "featured": "sim"
+  },
+  {
+    "id": "2",
+    "category": "tv",
+    "brand": "Samsung",
+    "name": "Samsung 42 Polegadas",
+    "price": 51,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse non diam sed metus luctus mollis nec finibus justo. Vivamus posuere varius elit at mattis. Donec urna sapien, hendrerit in maximus et, sodales nec magna. Vestibulum faucibus at leo ut mattis. Morbi faucibus lacus non massa placerat elementum. Donec lobortis nec.",
+    "qt": "3"
+  },
+  {
+    "id": "3",
+    "category": "tv",
+    "brand": "Sony",
+    "name": "Sony 32 Polegadas",
+    "price": 25,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam porta.",
+    "qt": "1"
+  },
+  {
+    "id": "4",
+    "category": "tv",
+    "brand": "LG",
+    "name": "LG 42 Polegadas",
+    "price": 53,
+    "description": "Linda TV",
+    "qt": "5"
+  },
+  {
+    "id": "5",
+    "category": "som",
+    "brand": "LG",
+    "name": "SoundBar",
+    "price": 25,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    "qt": "3"
+  },
+  {
+    "id": "6",
+    "category": "som",
+    "brand": "JBL",
+    "name": "Coluna JBL",
+    "price": 21,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam porta.",
+    "qt": "1"
+  },
+  {
+    "id": "7",
+    "category": "som",
+    "brand": "Harman",
+    "name": "Onyx",
+    "price": 53,
+    "description": "Lorem ipsum dolor sit amet.",
+    "qt": "5",
+    "featured": "sim"
+  },
+  {
+    "id": "8",
+    "category": "tv",
+    "brand": "Sony",
+    "name": "Sony 32 Polegadas",
+    "price": 25,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam porta.",
+    "qt": "1"
+  },
+  {
+    "id": "9",
+    "category": "tv",
+    "brand": "LG",
+    "name": "LG 42 Polegadas",
+    "price": 53,
+    "description": "Linda TV",
+    "qt": "5"
+  }
+]

@@ -1,0 +1,11 @@
+.content {
+    padding: 20px;
+    margin-left: 0;
+    transition: 0.5s;
+    height: 100vh;
+  }
+  
+  .content.is-open {
+    margin-left: 350px;
+    transition: 0.5s;
+  }

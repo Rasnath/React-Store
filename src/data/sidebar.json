@@ -1,0 +1,80 @@
+[
+  {
+    "title": "Geral",
+    "icon": "bi-gear-fill",
+    "childrens": [
+      {
+        "title": "Inicio",
+        "icon": "bi-house-fill",
+        "path": "/"
+      },
+      {
+        "title": "Sobre",
+        "icon": "bi-info-circle-fill",
+        "path": "/about"
+      },
+      {
+        "title": "Contactos",
+        "icon": "bi-phone-fill"
+      }
+    ]
+  },
+  {
+    "title": "Produtos",
+    "icon": "bi-info-circle-fill",
+    "childrens": [
+      {
+        "title": "Ver todos",
+        "path": "/product/all"
+      },
+      {
+        "title": "Grandes Eletrodomesticos",
+        "childrens": [
+          {
+            "title": "Maquina de Lavar",
+            "icon": "bi-phone-fill",
+            "path": "/product/maquinadelavar"
+          },
+          {
+            "title": "Fogao",
+            "icon": "bi-phone-fill"
+          }
+        ]
+      },
+      {
+        "title": "TV e Som",
+        "childrens": [
+          {
+            "title": "TV",
+            "icon": "bi-phone-fill",
+            "path": "/product/tv"
+          },
+          {
+            "title": "Som",
+            "icon": "bi-phone-fill",
+            "path": "/product/som"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Conta",
+    "icon": "bi-info-circle-fill",
+    "childrens": [
+      {
+        "title": "Login",
+        "path": "/login"
+      },
+      {
+        "title": "Registar",
+        "path": "/register"
+      }
+    ]
+  },
+  {
+    "title": "Supporte",
+    "icon": "bi-question-circle-fill",
+    "path": "/support"
+  }
+]
