@@ -6,3 +6,12 @@
   text-align: right;
 }
 
+.productImage {
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.productImage:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}

@@ -2,7 +2,14 @@ import React from "react";
 import { useContext } from "react";
 import CartContext from "../../Store/cart-context";
 import ProductImage from "../../../assets/Product.jpg";
-import { Card, CardBody, CardTitle, CardSubtitle, CardText } from "reactstrap";
+import {
+  Card,
+  CardBody,
+  CardTitle,
+  CardSubtitle,
+  CardText,
+  CardImg,
+} from "reactstrap";
 import classes from "./ProductItem.module.css";
 import { Link } from "react-router-dom";
 import AddButton from "../../UI/AddButton";
@@ -27,14 +34,13 @@ function ProductItem(props) {
       }}
     >
       <Link to={linkID}>
-        <img
-          style={{
-            width: "17.85rem",
-          }}
-          src={ProductImage}
-          onClick={productDetailsHandler}
-          alt="Imagem do produto"
-        ></img>
+        <div className={classes.productImage}>
+          <CardImg
+            src={ProductImage}
+            onClick={productDetailsHandler}
+            alt="Imagem do produto"
+          ></CardImg>
+        </div>
       </Link>
       <CardBody className="d-flex flex-column">
         <CardTitle tag="h5">{props.name}</CardTitle>
