@@ -5,7 +5,7 @@ import CartButton from "./Cart/CartButton";
 
 const Topbar = ({ toggleSidebar, onShowCart }) => {
   return (
-    <Navbar>
+    <Navbar sticky="top" color="light">
       <Button color="primary" onClick={toggleSidebar}>
         <FontAwesomeIcon icon={faAlignLeft} />
       </Button>

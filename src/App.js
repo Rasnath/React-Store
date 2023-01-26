@@ -6,6 +6,8 @@ import Content from "./content/Content";
 import "./App.css";
 import Cart from "./components/TopBar/Cart/Cart";
 import CartProvider from "./components/Store/CartProvider";
+import Topbar from "./components/TopBar/Topbar";
+import ProductsProvider from "./components/Store/ProductsProvider";
 
 function App() {
   const [sidebarIsOpen, setSidebarOpen] = useState(false);
@@ -25,13 +27,12 @@ function App() {
     <CartProvider>
       {CartIsShown && <Cart onClose={hideCartHandler} />}
       <Router>
+        <Topbar toggleSidebar={toggleSidebar} onShowCart={showCartHandler} />
         <div className="App wrapper">
           <SideBar toggle={toggleSidebar} isOpen={sidebarIsOpen} />
-          <Content
-            onShowCart={showCartHandler}
-            toggleSidebar={toggleSidebar}
-            sidebarIsOpen={sidebarIsOpen}
-          />
+          <ProductsProvider>
+            <Content sidebarIsOpen={sidebarIsOpen} />
+          </ProductsProvider>
         </div>
       </Router>
     </CartProvider>

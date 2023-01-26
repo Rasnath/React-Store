@@ -1,10 +1,12 @@
+import { useContext } from "react";
 import React from "react";
 import GeneralCard from "../UI/GeneralCard";
 import classes from "./Products.module.css";
 import ProductItem from "./ProductItem/ProductItem";
-import Procucts from "../../data/dummyProducts.json";
+import ProductContext from "../Store/products-context";
 
 function Products(props) {
+  const productCtx = useContext(ProductContext);
   const filterCategory = (array) => {
     if (props.onCategory === "all") {
       return array;
@@ -49,7 +51,7 @@ function Products(props) {
   };
 
   const filtrados = () => {
-    let result = Procucts;
+    let result = productCtx.products;
     result = filterCategory(result);
     result = filterSearch(result);
     result = sortProducts(result);
@@ -66,7 +68,6 @@ function Products(props) {
       price={product.price}
     />
   ));
-
   return (
     <section className={classes.product}>
       <GeneralCard>

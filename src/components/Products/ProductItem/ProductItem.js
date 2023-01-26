@@ -8,7 +8,7 @@ import {
   CardTitle,
   CardSubtitle,
   CardText,
-  CardImg,
+  CardImg
 } from "reactstrap";
 import classes from "./ProductItem.module.css";
 import { Link } from "react-router-dom";
@@ -30,7 +30,7 @@ function ProductItem(props) {
     <Card
       className={classes.card}
       style={{
-        width: "18rem",
+        width: "18rem"
       }}
     >
       <Link to={linkID}>

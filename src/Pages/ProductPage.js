@@ -1,21 +1,17 @@
 import { Fragment } from "react";
+import { useContext } from "react";
+import ProductContext from "../components/Store/products-context";
 import { useParams } from "react-router-dom";
-import {
-  CardBody,
-  Card,
-  CardImg,
-  CardTitle,
-  CardText,
-  Button
-} from "reactstrap";
+import { CardBody, Card, CardImg, CardTitle, CardText } from "reactstrap";
 import AddButton from "../components/UI/AddButton";
-import products from "../data/dummyProducts.json";
-import classes from "./ProductPage.module.css"
+import classes from "./ProductPage.module.css";
 
 function ProductPage() {
+  const productCtx = useContext(ProductContext);
   const { id } = useParams();
-
-  const product = products.find((product) => product.id === { id }.id);
+  const product = productCtx.products.find(
+    (product) => product.id === { id }.id
+  );
   const price = `${product.price.toFixed(2)} €`;
 
   return (
@@ -34,8 +30,12 @@ function ProductPage() {
           <CardTitle tag="h5">{product.name}</CardTitle>
           <CardText>{product.description}</CardText>
           <div className={classes.priceAdd}>
-          <h3>{price}</h3>
-          <AddButton id={product.id} name={product.name} price={product.price}/>
+            <h3>{price}</h3>
+            <AddButton
+              id={product.id}
+              name={product.name}
+              price={product.price}
+            />
           </div>
         </CardBody>
       </Card>
